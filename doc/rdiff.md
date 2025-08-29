@@ -97,8 +97,8 @@ delta
 
 > rdiff \[OPTIONS\] delta SIGNATURE NEWFILE DELTA
 
-**rdiff delta** reads in a delta describing a basis file. It then
-calculates and writes a delta delta that transforms the basis into the
+**rdiff delta** reads in a signature describing a basis file. It then
+calculates and writes a delta that transforms the basis into the
 new file.
 
 patch
@@ -106,7 +106,7 @@ patch
 
 > rdiff \[OPTIONS\] patch BASIS DELTA OUTPUT
 
-rdiff applies a delta to a basis file and writes out the result.
+**rdiff patch** applies a delta to a basis file and writes out the result.
 
 rdiff cannot update files in place: the output file must not be the same
 as the input file.
